@@ -49,7 +49,7 @@ tools {
         script {
           // Set the new image tag with the Jenkins build number
        sh '''
-          sed -i "s/image:.*/image: codedecode25\\/angularapp:${VERSION}/" aws/angulardepl.yml
+          sed -i "s/image:.*/image: codedecode25\\/angularapp:${VERSION}/" aws/angular-manifest.yml
         '''
 
           sh 'git checkout master'
